@@ -3,10 +3,12 @@ import React from "react"
 
 function Todo({ todo, toggleComplete, removeTodo }) {
 
+  // Functionallity to declate todo as completed
   function handleCheckboxClick() {
     toggleComplete(todo.id);
   }
-    
+  
+  // Functionallity to remove a todo
   function handleRemoveClick() {
     removeTodo(todo.id);
   }

@@ -28,6 +28,7 @@ function App() {
     setTodos([ todo, ...todos ]);
   };
 
+  // Check for toggled todo by checking id's and then sending the toggle down as a prop to the checked todo.
   function toggleComplete(id) {
     setTodos(
       todos.map(todo => {
@@ -42,10 +43,12 @@ function App() {
     );
   }
 
+  // Checking id's for the clicked todo that is going to be removed and then sending the clicked todo down as a prop.
   function removeTodo(id) {
     setTodos(todos.filter(todo => todo.id !== id));
   }
 
+  // Rendering the base of the app and sending the correct props
   return (
     <div className="App">
       <header className="App-header">

@@ -3,6 +3,7 @@ import React from 'react';
 import Todo from './Todo'
 
 function TodoList ({ todos, toggleComplete, removeTodo }) {
+  // Renders a list of all todos under the forms inputfeild
   return (
     <List>
       { todos.map(todo => (
