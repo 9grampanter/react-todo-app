@@ -15,6 +15,7 @@ function Todo({ todo, toggleComplete, removeTodo }) {
 
   return (
     <ListItem 
+      className='todoItem'
     >
       <Checkbox 
         defaultChecked={todo.completed}
